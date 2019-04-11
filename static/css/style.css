@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background:lightgray
+}
+/* The code styles the text at the bottom of the footer */
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background:lightblue
+}
+/* This CSS styles the DRUG icon in the navbar */
+.nav-drug {
+  position: absolute;
+  bottom: 5px;
+  left: 150px;
+  width: 35px;
+  color: #bf6864;
+}
+/* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/drug.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+.container {
+  background: white;
+  padding: 10px
+}
+img{vertical-align: center;
+align-content: center}
+img.img-fluid{
+  padding:10px;
+  vertical-align: middle;
+}
+p{
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+h1{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #78c2ad;
+  font-size: 35px
+}
+
+
+.category {font-family: 'Times New Roman', Times, serif;
+font-size: 15px}
+
+h2{font-family: 'Times New Roman', Times, serif;
+color:#78c2ad;
+font-size: 20px;
+text-align: center
+}
+
+.navbar li {
+  display: d-block;
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+
+.drug {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  background-color: #78c2ad;
+  border: 1px solid #78c2ad;
+  padding: 5px; 
+}
+/* Adding media queries to change the narbar's background color */
+@media (max-width: 720px) {
+  
+ 
+ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+     background: #78c2ad!important
+ }
+ .responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+  }
+/* Basic formating of the HTML page. */
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+
+
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+}
+
+
+/* The styles for picture behind the title and subtitle.*/
+/* .hero {
+  position: relative;
+  padding: 6px 8px;
+  height: 400px;
+  padding: 0px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/unemployment_Claims.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: behind;
+} */
+
+/* Yellow title flying in with blue background for readability */
+.hero h1 {
+  padding: 6px 8px;
+  margin-top: 30px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+  text-align: top;
+  color: rgb(129, 69, 69);
+}
+
+
+/* Yellow subtitle with a blue background for readability */
+.hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  text-align: center;
+  color:rgb(112, 47, 47);
+}
+
+/* This creates the outline of the states */
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+
+
+
+#map {
+  display: block;
+  height: 70%;
+  width: 80%;
+  position: absolute;
+}
+
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+#graph,
+body,
+html {
+  height: 80%;
+}
+
+
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .pagination li {
+    font-size: 0.8em;
+  }
+
+  .pagination > li > a {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #1b3146;
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+
+  #table-area td {
+    font-size: 1.25em;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .pagination li {
+    font-size: 0.6em;
+  }
+
+  .pagination > li > a {
+    padding: 4px 8px;
+  }
+
+  .hero h1 {
+    animation: smaller-title 1.2s forwards linear;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+
+
+
+
+.filters .panel-body {
+  padding: 0;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #8e979f;
+  outline: none;
+}
+
+#table-area th {
+  text-align: center;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
