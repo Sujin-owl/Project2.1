@@ -44,4 +44,4 @@ Using SQLAlchemy, each set of data was loaded into SQL as it's own individual ta
 
 To display the data collected, D3 was utilized to create a scatter graph displaying drug by death and unemployment rates by state.  Flask application was used to render a custom HTML to explain and display the scatter graph
 
-#### Heroku:
+#### Heroku:https://drug-project2.herokuapp.com/
