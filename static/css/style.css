@@ -48,13 +48,13 @@ body {
   height: 550px;
   padding: 20px;
   margin: 0;
-  background: black;
+  background:white;
   background-image: url("../images/drug.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
 }
-.container {
+.container-fluid {
   background: white;
   padding: 10px
 }
@@ -73,7 +73,7 @@ margin-inline-end: 0px;
 }
 h1{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #78c2ad;
-  font-size: 35px
+  font-size: 20px
 }
 
 

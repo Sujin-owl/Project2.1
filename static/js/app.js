@@ -36,8 +36,10 @@ function buildCharts(state) {
     var drug_values = data.number_drug_overdose_death;
     var unemploy_values = data.unemployment_data;
     var cocaine_values = data.cocaine;
+    var deaths = data.number_of_deaths;
     console.log(drug_values);
     drug = Object.values(drug_values);
+    drug_scalar = Object.values(drug_values)/Object.values(deaths)
     console.log(drug);
     unemploy = Object.values(unemploy_values);
     time = Object.keys(unemploy_values);
@@ -49,8 +51,8 @@ function buildCharts(state) {
     y: unemploy,
     mode:"markers",
     marker:{
-      color:"lightblue",
-      size: drug,
+      color:"darkblue",
+      size: drug_scalar,
     //setting 'sizeref' to lower than 1 decreases the rendered size
     sizeref: 4,
       opacity: 0.8
